@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f3f3f3">
+
+    <RelativeLayout
+        android:id="@+id/frag_record_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/record_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/zhang" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020年10月30日 18:49"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/record_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:text="姓名" />
+
+
+        <EditText
+            android:id="@+id/edit_record_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="某某某"
+            android:layout_centerVertical="true"
+            android:inputType="textPersonName"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/record_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_record_name"
+            android:padding="10dp"
+            android:text="金额" />
+        <EditText
+            android:id="@+id/edit_record_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_money"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="xxx"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/record_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_record_money"
+            android:padding="10dp"
+            android:text="缘由" />
+        <EditText
+            android:id="@+id/edit_record_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_reason"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="略略略"
+            android:layout_centerVertical="true"
+            android:inputType="text"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="500dp"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/record_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/ok"
+            android:textColor="@color/green_006400"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/record_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/no"
+            android:textColor="@color/green_006400"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
